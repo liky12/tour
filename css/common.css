@@ -123,8 +123,6 @@ img {
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-  border: 0 none;
   table-layout: fixed;
   width: 100%;
 }
@@ -195,3 +193,14 @@ legend {
   display: block;
   clear: both;
 }
+
+
+body{
+  font-family:"Malgun Gothic", "맑은고딕",sans-serif; 
+  font-size: 16px; color: #444;}
+
+.row{
+  max-width: 1050px; margin: 0 auto;}
+
+
+  
