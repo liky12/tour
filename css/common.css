@@ -228,27 +228,27 @@ body{
   position: relative; left: 10px; top: -2px;}
 
 
-.depth1 {text-align: right;}
-.depth1 > li{
-  display: inline-block;
-  font-size: 18px; 
-  color:#fff;}
-.depth1 > li > a {display: block;  padding:32px 34px 39px;}
-.depth1 > li:last-child a{padding-right: 0;}
-.dep2box { 
-  position: absolute; width: 100%; left: 0; top:100% ;
-  background: rgba(255,100,0,0.85); 
-  text-align: left;
-  display: none;
-  z-index: 9999;}
-.depth2 > li {display: inline-block; padding: 20px 0; }
-.depth1 > li:hover .dep2box{display: block;}
-.depth2 > li a{display:block; padding-left:30px ;}
-.depth1 > li:nth-child(1) .depth2{padding-left: 470px;}
-.depth1 > li:nth-child(2) .depth2{padding-left: 580px;}
-.depth1 > li:nth-child(3) .depth2{padding-left: 678px;}
-.depth1 > li:nth-child(4) .depth2{padding-left: 890px;}
-.depth1 > li:nth-child(4) .depth2 li{padding-right: 0; padding-left: 10px;}
+  .depth1 {text-align: right;}
+  .depth1 > li{
+    display: inline-block;
+    font-size: 18px; 
+    color:#fff;}
+  .depth1 > li > a {display: block;  padding:32px 34px 39px;}
+  .depth1 > li:last-child a{padding-right: 0;}
+  .dep2box { 
+    position: absolute; width: 100%; left: 0; top:100% ;
+    background: rgba(255,100,0,0.85); 
+    text-align: left;
+    display: none;
+    z-index: 9999;}
+  .depth2 > li {display: inline-block; padding: 20px 0;}
+  .depth1 > li:hover .dep2box{display: block;}
+  .depth2 > li a{display:block; padding-left:30px ;}
+  .depth1 > li:nth-child(1) .depth2{padding-left: 470px;}
+  .depth1 > li:nth-child(2) .depth2{padding-left: 580px;}
+  .depth1 > li:nth-child(3) .depth2{padding-left: 680px;}
+  .depth1 > li:nth-child(4) .depth2{padding-left: 946px;}
+  .depth1 > li:nth-child(4) .depth2 a{padding-right: 0; padding-left: 10px; }
 
 
 /* container 시작 */
@@ -266,7 +266,7 @@ body{
   color:#fff; text-align: center;}
 .slide .text p:nth-child(1) {
   font-size: 50px ; 
-  letter-spacing: 3px; 
+  letter-spacing: 5px; 
   text-shadow: 2px 2px 5px #555; 
   border-bottom: 1px solid #eee;
   padding-bottom: 10px;} 
@@ -277,5 +277,7 @@ body{
 .slide .text p:nth-child(3) {
   font-size: 20px ;
   letter-spacing: 3px; 
-  position: relative; top:100px;}
+  position: relative; top:150px;}
 .slide2, .slide3{display: none;}
+
+
