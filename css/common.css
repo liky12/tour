@@ -199,7 +199,7 @@ legend {
 
 body{
   font-family:"Malgun Gothic", "맑은고딕",sans-serif; 
-  font-size: 16px; color: #444;}
+  font-size: 16px; color: #444;  letter-spacing: -1px;}
 
 
 .row{
@@ -233,7 +233,7 @@ body{
     display: inline-block;
     font-size: 18px; 
     color:#fff;}
-  .depth1 > li > a {display: block;  padding:32px 34px 39px;}
+  .depth1 > li > a {display: block;  padding:32px 37.5px 39px;}
   .depth1 > li:last-child a{padding-right: 0;}
   .dep2box { 
     position: absolute; width: 100%; left: 0; top:100% ;
@@ -245,10 +245,11 @@ body{
   .depth1 > li:hover .dep2box{display: block;}
   .depth2 > li a{display:block; padding-left:30px ;}
   .depth1 > li:nth-child(1) .depth2{padding-left: 470px;}
-  .depth1 > li:nth-child(2) .depth2{padding-left: 580px;}
-  .depth1 > li:nth-child(3) .depth2{padding-left: 680px;}
-  .depth1 > li:nth-child(4) .depth2{padding-left: 946px;}
+  .depth1 > li:nth-child(2) .depth2{padding-left: 582px;}
+  .depth1 > li:nth-child(3) .depth2{padding-left: 690px;}
+  .depth1 > li:nth-child(4) .depth2{padding-left: 951px;}
   .depth1 > li:nth-child(4) .depth2 a{padding-right: 0; padding-left: 10px; }
+
 
 
 /* container 시작 */
@@ -280,4 +281,72 @@ body{
   position: relative; top:150px;}
 .slide2, .slide3{display: none;}
 
+
+
+/* 다시찾는 인기여행지 top3 */
+.about_area h2 {font-size: 40px; text-align: center; padding: 55px 0 105px;}
+.about_box {background: #f4f0e9;}
+.place_list li{
+  float:left; width:32%; margin-left:2%;
+  text-align: center; position: relative; top:-50px; }
+.place_list li:first-child{margin-left:0;}
+/* nth-child(n), last-child는 first-child에 비해 호환성이 낮다. */
+
+.place_list h3{font-size: 18px; font-weight: bold; color:#000;  padding-top: 25px; }
+.place_list .txt{ padding:10px 30px 0; line-height: 1.8; color: #666; }
+.place_list .view{border-top: 2px solid #333; color: #666; 
+  padding-top:5px; /*border와의 top 거리 값 */
+  margin-top: 20px; 
+  display: inline-block}
+  /* span요소는 인라인요소이기 때문에 padding,margin이 안먹힌다. */
+
+              .libox {width:340px;height:328px;overflow: hidden;}
+              .libox img{ transition: all 0.8s;}
+              .libox:hover img{transform: scale(1.1); opacity: 0.8;}
+
+
+.bgbox {
+   background: url(../img/mainslide03.jpg) no-repeat; height: 200px;
+   background-size: cover; 
+   /* background-position: center;  */
+   background-attachment: fixed;
+   position: relative;}
+.bgbox .txt{
+  position: absolute; top:50%; left:50%; transform: translate(-50%,-50%)
+  ;color: #fff; text-align: center;}
+.bgbox .txt p:first-child {font-size: 20px;}
+.bgbox .txt p:last-child{font: 30px; line-height: 1.2; margin-top: 10px;}
+
+
+
+/* 상담신청 및 nottice */
+.appbbs_area{padding:60px 0;}
+.appbbs_box .app_line{
+  float: left; width: 66%; padding: 45px 0;
+  text-align: center; 
+  background: url(../img/bg_app.jpg) no-repeat;} 
+.bbs_line{float: right; width: 30%;}
+
+
+.app_line a{
+  display:inline-block; 
+  width:42.4%; height: 100px; line-height: 100px; 
+  padding-left: 75px; margin-right: 1%; 
+  color:#fff;  text-align: left; font-size: 26px;  
+  background: rgba(0,0,0,0.3) url(../img/ico_katalk.png) no-repeat 20px 50%; 
+  border:2px solid #fff;}
+.app_line a+a{
+  margin-right: 0%; 
+  background: rgba(0,0,0,0.3) url(../img/ico_phone.png) no-repeat  20px 50%; }
+
+.bbs_line {float: right; width: 30%;}
+.bbs_line h3{font-size: 26px; padding-bottom: 10px;}
+.bbs_line .notice_recent li{padding: 8px 0;}
+.bbs_line .notice_recent li a{
+  display: block;
+  padding-left: 14px;  
+  white-space: nowrap;
+  overflow: hidden; text-overflow: ellipsis;
+  background: url(../img/ico_bullet.png) no-repeat 0 50%; 
+  background-size: 4px auto; /*원래크기는 auto값 */}
 
