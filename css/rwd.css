@@ -1,9 +1,7 @@
 @charset "utf-8";
 
-@media screen and (max-width:1049px) {
+@media screen and (max-width:1050px) {
 
-      .openMOgnb {display: none;}
-    
       .header_area h1{float:left; padding:45px 0 0 20px; }
 
       .header_cont{float:right; width:60%; padding-right: 20px;}
@@ -30,12 +28,35 @@
         .depth1 > li:nth-child(4) .depth2{padding-left: 65%;}
         .depth1 > li:nth-child(4) .depth2 a{padding-left: 30px; }
 
-        .quick_area{display: none;}
+
+       /* 퀵메뉴 박스 스타일 */
+       .quick_area{
+        position: fixed; right:20px; top:85%; width: 45px; 
+        margin-top: -22.5px;
+        z-index: 99999;}
+      .quick_list {display: none;}
+
+      .to_top{  text-align: center;  font-size: 11px; }
+      .to_top a{
+        display: block;
+        width:45px; height: 45px; line-height: 45px;
+        border: 1px solid #a3a3a3;
+        border-radius: 50%;
+        background:rgba(50,50,50,0.5);
+        color:#fff;
+        position: relative;}
+        .to_top a:before{content: ""; display: block; width: 0; height: 0;
+          border: 5px solid #fff; 
+          border-top:none; border-left-color:transparent ; border-right-color: transparent;
+          position: absolute; left: 50%; margin-left: -6px; margin-top: 5px;}
+
       
 }
 
 
 @media screen and (max-width:799px) {
+
+
 
     .openMOgnb {
         display: block; 
@@ -49,11 +70,23 @@
     .openMOgnb span:nth-of-type(2) {width: 17px;}
     .openMOgnb span:nth-of-type(3) {margin-bottom:0;}
 
+    #header.on .closeMOgnb{
+      display: block; 
+      position: absolute; top:40px; right:15px;
+      width:25px; height:17px; margin-right: 3px ;}
+    .closeMOgnb a{display: block;}
+    .closeMOgnb span{
+      display: block; width:30px; height:2px; 
+      background: #fff; border-radius: 20px; 
+      transform: rotate(45deg); position: absolute; top:0; left:0;}
+    .closeMOgnb span:nth-of-type(2){transform: rotate(-45deg);}
+
     
-    #header{
+      #header{
         background: rgba(0,0,0,0.5); color:#fff;
         position: absolute; height: 90px; width:100%; top:0; left:0; z-index:99999;}
-      
+      #header.on{background:#31353d; height: auto;}
+    
       .header_area h1{
           float:none; 
           padding:27px 0 0;  text-align: center;}
@@ -64,37 +97,60 @@
         background-repeat: no-repeat; 
         background-size: contain; margin: 0 auto;}
 
-      .header_cont{display: none;}
 
-      .util {text-align: right;}
-      .util > li{display: inline-block; font-size: 14px; color:#eee; padding: 10px 0 0 15px; }
-      .util> li:nth-child(1):after{
+      #header .header_cont{display: none; float:none; width:100%; padding-right:0px; background: #31353d;}
+      #header.on .header_cont{display:block;}
+
+      .util {text-align: left; margin: 35px 0 20px;}
+      .util > li{ font-size: 16px;  }
+      /* .util> li:nth-child(1):after{
         content:"|"; 
         display: inline-block; 
         font-size: 8px; color: #eee; 
-        position: relative; left: 10px; top: -2px;}
+        position: relative; left: 10px; top: -2px;} */
 
 
-        .depth1 {text-align: right;}
+        .depth1 {text-align: left; border-top: 1px solid #83868b;}
         .depth1 > li{
-          display: inline-block;
-          font-size: 18px; 
-          color:#fff;}
-        .depth1 > li > a {display: block;  padding: 32px 20px 39px;}
+          display: block; float:left; width:50%;
+          font-size: 16px; 
+          color:#fff; padding:0; border-bottom: 1px solid #83868b; border-left: 1px solid #83868b;}
+        .depth1 > li:nth-child(odd){border-left:none;}
+        .depth1 > li > a {display: block;  padding: 20px 0 20px 60px; 
+          background-size: 49px 56px; 
+          background-repeat: no-repeat; background-position: 5px 0;}
+        .depth1 > li:nth-child(1) > a{background-image: url(../img/ico_gnb01.png)}
+        .depth1 > li:nth-child(2) > a{background-image: url(../img/ico_gnb02.png)}
+        .depth1 > li:nth-child(3) > a{background-image: url(../img/ico_gnb03.png)}
+        .depth1 > li:nth-child(4) > a{background-image: url(../img/ico_gnb04.png)}
         .depth1 > li:last-child a{padding-right: 0;}
-        .dep2box { 
-          position: absolute; width: 100%; left: 0; top:100% ;
-          background: rgba(255,100,0,0.85); 
-          text-align: left;
-          display: none;
-          z-index: 9999;}
-        .depth2 > li {display: inline-block; padding: 20px 0;}
-        .depth1 > li:hover .dep2box{display: block;}
-        .depth2 > li a{display:block; padding-left:30px ;}
-        .depth1 > li:nth-child(1) .depth2,
-        .depth1 > li:nth-child(2) .depth2,
-        .depth1 > li:nth-child(3) .depth2,
-        .depth1 > li:nth-child(4) .depth2{padding-left: 65%;}
-        .depth1 > li:nth-child(4) .depth2 a{padding-left: 30px; }
+        .depth1 > li:hover .dep2box{display: none;}
+        
+
+       .quick_area{
+        position: fixed; right:20px; top:85%; width: 45px; 
+        margin-top: -22.5px;
+        z-index: 99999;}
+
+        .to_top{  text-align: center;  font-size: 11px; display: none;}
+
+        .quick_list {display: block; position: fixed; bottom: 0; left: 0; width: 100%;}
+        .quick_list li{font-size:15px; text-align:left; float: left; width: 33.33%; } 
+        .quick_list li a{
+          display: block;  padding: 15px 0px 15px 40px;  background: #333; 
+          border-top: 1px solid #4d4d4d; border-left: 1px solid #4d4d4d; 
+          background-image: url(../img/ico_phone_mobtm.png); 
+          background-size: 20px;
+           background-repeat: no-repeat; 
+           background-position: 10px center;}
+           .quick_list li:nth-child(2) a{background-image: url(../img/ico_katalk_mobtm.png);} 
+           .quick_list li:nth-child(3) a{background-image: url(../img/ico_contact_mobtm.png);} 
+          .quick_list li:nth-child(1) a{border-left: none;}
+        .quick_list li a h3{font-size: inherit; color: #ddd; letter-spacing: -2px; padding: 0px;}
+        .quick_list li+li+li a h3{padding-bottom: 0px;}
+        .quick_list li a p {display: none;}
+        .quick_list li:first-child a{border-radius:0; }
+
+
 
 }
