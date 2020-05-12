@@ -64,7 +64,7 @@
             background: rgba(0,0,0,0.3) url(../img/ico_phone.png) no-repeat  20px 50%; }
 
 
-          .bbs_line {float: right; width: 30%;}
+          .bbs_line {float: right; width: 30%; padding-right: 20px;}
 
 
 
