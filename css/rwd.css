@@ -28,6 +28,22 @@
         .depth1 > li:nth-child(4) .depth2{padding-left: 65%;}
         .depth1 > li:nth-child(4) .depth2 a{padding-left: 30px; }
 
+        .slide .text p:nth-child(1) {
+          font-size: 50px ; 
+          letter-spacing: 5px; 
+          text-shadow: 2px 2px 5px #555; 
+          border-bottom: 1px solid #eee;
+          padding-bottom: 10px;} 
+        .slide .text p:nth-child(2) {
+          font-size: 20px ; 
+          letter-spacing: -1px; 
+          margin-top: 20px;}
+        .slide .text p:nth-child(3) {
+          font-size: 20px ;
+          letter-spacing: 0px; 
+          position: relative; top:150px;}
+
+
 
        /* 퀵메뉴 박스 스타일 */
        .quick_area{
@@ -72,7 +88,7 @@
 
     #header.on .closeMOgnb{
       display: block; 
-      position: absolute; top:40px; right:15px;
+      position: absolute; top:42px; right:15px;
       width:25px; height:17px; margin-right: 3px ;}
     .closeMOgnb a{display: block;}
     .closeMOgnb span{
@@ -125,7 +141,46 @@
         .depth1 > li:nth-child(4) > a{background-image: url(../img/ico_gnb04.png)}
         .depth1 > li:last-child a{padding-right: 0;}
         .depth1 > li:hover .dep2box{display: none;}
-        
+
+
+        .slide .text p:nth-child(1) {
+          font-size: 30px ; 
+          letter-spacing: 0px; 
+          text-shadow: 2px 2px 5px #555; 
+          border-bottom: 1px solid #eee;
+          padding-bottom: 10px;} 
+        .slide .text p:nth-child(2) {
+          font-size: 16px ; 
+          letter-spacing: 0px; 
+          margin-top: 20px;}
+
+
+          .about_area h2 {font-size: 20px; text-align: center; padding: 55px 0 55px;}
+          .about_box {background: none;}
+          .place_list li{
+            position: relative; width:90%; margin-left:5%; margin-right: 5%;
+            text-align: center;top:0px; margin-bottom: 30px;}
+          .place_list li:first-child{margin-left:5%;}
+          /* nth-child(n), last-child는 first-child에 비해 호환성이 낮다. */
+
+          .place_list h3{font-size: 18px; font-weight: bold; color:#000;  padding-top: 25px; }
+          .place_list .txt{ padding:10px 30px 0; line-height: 1.8; color: #666;  }
+          .place_list .view{border-top: 2px solid #333; color: #666; 
+            padding-top:5px; /*border와의 top 거리 값 */
+            margin-top: 20px; 
+            display: inline-block}
+            /* span요소는 인라인요소이기 때문에 padding,margin이 안먹힌다. */
+
+
+              .libox{height:auto; overflow: hidden; position: relative;}
+              .libox img{transition: all 0.8s; width: 100%;}
+
+         .bgbox .txt p:first-child {font-size: 18px;}
+         .bgbox .txt p:last-child{font-size: 16px; line-height: 1.2; margin-top: 10px; letter-spacing: -1px;}
+
+
+          
+
 
        .quick_area{
         position: fixed; right:20px; top:85%; width: 45px; 
