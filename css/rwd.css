@@ -43,6 +43,30 @@
           letter-spacing: 0px; 
           position: relative; top:150px;}
 
+           /* 상담신청 및 notice */
+          .appbbs_area{padding:60px 0;}
+          .appbbs_box .app_line{
+            float: left; width: 66%; padding: 45px 0;
+            text-align: center; 
+            background: url(../img/bg_app.jpg) no-repeat;} 
+          .bbs_line{float: right; width: 30%;}
+
+          .app_line a{
+            display:inline-block; 
+            width:42.4%; height: 100px; line-height: 100px; 
+            padding-left: 75px; margin-right: 1%; 
+            color:#fff;  text-align: left; font-size: 16px;  
+            background: rgba(0,0,0,0.3) url(../img/ico_katalk.png) no-repeat 20px 50%; 
+            border:2px solid #fff; 
+          }
+          .app_line a+a{
+            margin-right: 0%; 
+            background: rgba(0,0,0,0.3) url(../img/ico_phone.png) no-repeat  20px 50%; }
+
+
+          .bbs_line {float: right; width: 30%;}
+
+
 
 
        /* 퀵메뉴 박스 스타일 */
@@ -70,9 +94,10 @@
 }
 
 
+
+
+
 @media screen and (max-width:799px) {
-
-
 
     .openMOgnb {
         display: block; 
@@ -179,6 +204,31 @@
          .bgbox .txt p:last-child{font-size: 16px; line-height: 1.2; margin-top: 10px; letter-spacing: -1px;}
 
 
+          /* 상담신청 및 notice */
+          .appbbs_area{padding: 0;}
+          .appbbs_box .app_line{
+            float: none; width: 100%; padding:25px 20px;
+            height: 150px;
+            text-align: center; 
+            background: url(../img/bg_app.jpg) no-repeat; background-size: cover;} 
+
+
+          .app_line a{
+            display:inline-block; 
+            width:42.4%; height: 100px; line-height: 100px; 
+            padding-left: 75px; margin-right: 0%; 
+            color:#fff;  text-align: left; font-size: 0px;  
+            background: rgba(0,0,0,0.5) url(../img/ico_katalk.png) no-repeat  50%; 
+            border:0.8px solid #fff; 
+          }
+          .app_line a+a{
+            margin-right: 0%; 
+            background: rgba(0,0,0,0.5) url(../img/ico_phone.png) no-repeat  50%; }
+
+
+          .bbs_line {float: none; width: 100%; padding: 20px;}
+
+
           
 
 
@@ -192,7 +242,7 @@
         .quick_list {display: block; position: fixed; bottom: 0; left: 0; width: 100%;}
         .quick_list li{font-size:15px; text-align:left; float: left; width: 33.33%; } 
         .quick_list li a{
-          display: block;  padding: 15px 0px 15px 40px;  background: #333; 
+          display: block;  padding: 20px 0px 20px 40px;  background: #333; 
           border-top: 1px solid #4d4d4d; border-left: 1px solid #4d4d4d; 
           background-image: url(../img/ico_phone_mobtm.png); 
           background-size: 20px;
