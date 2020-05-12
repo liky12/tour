@@ -216,7 +216,7 @@
           .bgbox {
             background: url(../img/mainslide03.jpg) no-repeat; height: 200px;
             background-size: cover; 
-            /* background-position: center;  */
+            background-position: center; 
             background-attachment: scroll;
             position: relative;}     
          .bgbox .txt p:first-child {font-size: 18px;}
