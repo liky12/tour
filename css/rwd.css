@@ -213,6 +213,12 @@
               .libox{height:auto; overflow: hidden; position: relative;}
               .libox img{transition: all 0.8s; width: 100%;}
 
+          .bgbox {
+            background: url(../img/mainslide03.jpg) no-repeat; height: 200px;
+            background-size: cover; 
+            /* background-position: center;  */
+            background-attachment: scroll;
+            position: relative;}     
          .bgbox .txt p:first-child {font-size: 18px;}
          .bgbox .txt p:last-child{font-size: 16px; line-height: 1.2; margin-top: 10px; letter-spacing: -1px;}
 
