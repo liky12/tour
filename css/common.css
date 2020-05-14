@@ -1,101 +1,14 @@
 @charset "utf-8";
 
 /* reset element */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-button,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+*{ margin: 0;  padding: 0; box-sizing: border-box;}
 
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
-  font-weight: normal;
-}
+h6 { font-weight: normal;}
 
 /* HTML5 display-role reset for older browsers */
 article,
@@ -108,40 +21,20 @@ header,
 hgroup,
 menu,
 nav,
-section {
-  display: block;
-}
+section {  display: block;}
 
-body {
-  line-height: 1;
-}
+body {  line-height: 1;}
 
-img {
-  vertical-align: middle;
-  border: none;
-}
+img {  vertical-align: middle;  border: none;}
 
-table {
-  border-collapse: collapse;
-  table-layout: fixed;
-  width: 100%;
-}
+table {  border-collapse: collapse;  table-layout: fixed;  width: 100%;}
 
-ul,
-ol,
-li {
-  list-style: none;
-}
+ul,ol,li {  list-style: none;}
 
 address,
-em {
-  font-style: normal;
-}
+em {  font-style: normal;}
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
+a {  text-decoration: none;  color: inherit;}
 
 /* 건너뛰기 링크(접근성) */
 .skipnav a {
@@ -182,9 +75,9 @@ a {
 
 /* 테이블의 제목과 폼의 그룹화 요소는 안보이게 처리함 */
 caption,
-legend {
-  display: none
-}
+legend {  display: none}
+
+fieldset{border: none;;}
 
 /* 자식들이 float 속성을 가질때 부모의 높이가 무너지므로 .cf로 해결함 */
 .cf:after,
@@ -395,7 +288,7 @@ footer {border-top: 1px solid #ddd;}
   text-indent: -9999px; overflow: hidden;}
 .snslink li+li a{ background-position: -50px 0 ;}
 .snslink li+li+li a{ background-position: -100px 0 ;}
-
+.snslink li:hover{opacity: 0.75; transition: all 0.6s;}
  
 
 .quick_area{
