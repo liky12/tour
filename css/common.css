@@ -77,7 +77,27 @@ a {  text-decoration: none;  color: inherit;}
 caption,
 legend {  display: none}
 
-fieldset{border: none;;}
+fieldset{border: none;}
+
+select{
+  -webkit-appearance: none;
+   appearance: none; 
+  background: url(../img/ico_selectArr.png) no-repeat 100% 50%;}
+input[type='radio'],
+input[type='checkbox']{
+  -webkit-appearance: none;
+   appearance: none; }
+
+
+
+input[type='submit']:hover,
+input[type='reset']:hover,
+button:hover{cursor: pointer;}
+
+input,select{vertical-align: middle;}
+
+
+
 
 /* 자식들이 float 속성을 가질때 부모의 높이가 무너지므로 .cf로 해결함 */
 .cf:after,

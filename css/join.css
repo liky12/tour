@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+
+
 #container .join_tit{
     background: url(../img/img_top5.jpg) no-repeat bottom; 
     background-size: cover;
@@ -27,9 +29,54 @@
 .join_form .app_content{float: right; width: 80%;}
 .join_form .app_list li{padding: 8px 0;}
 
-.join_form input[type=text], .join_form input[type=tel],
-.join_form input[type=password]{height: 45px; width:100%; padding: 0 10px ; 
-    border: 1px solid #ccc; line-height: 45px; font-size: 15px; }
+.join_form input[type=text], 
+.join_form input[type=tel],
+.join_form input[type=password], 
+.join_form select,
+ .join_form textarea{
+     height: 45px; width:100%; padding: 0 10px ; 
+    border: 1px solid #ccc; font-size: 15px; }
+
+.join_form #email_lbl, 
+.join_form #edomain_lbl,
+.join_form #edomain_otp{width: 160px;}
+.join_form #query{height: 245px; 
+    /* textarea는 글꼴 관련 스타일을 상위태그에서 상속받지 못함 */
+    font-size: 15px; 
+    font-family: "Malgum Gothic", '맑은고딕', sens-serif;
+    letter-spacing: -1px; color:#444; padding: 10px; line-height: 1.5;}
+
+.join_form .btn {text-align: center; padding-top: 15px;}
+.join_form .btn input{
+    width: 100px; height: 50px;
+    background:cadetblue; color: #fff; 
+    border:none; border-radius: 3px; 
+    font-size: 15px; margin: 0 10px; opacity: 0.7;}
+ .join_form .btn input:hover{background:coral; opacity: 1;}
+
+
+
+  .join_form .radio_area,
+ .join_form .hobby_area{height:  45px ;}
+
+ .radio_area label{
+     display: inline-block;
+     background: url(../img/bg_radio.png) no-repeat 0 0; 
+     padding-left: 20px; height: 20px; margin-top: 10px;
+     padding-right: 20px; font-size: 15px; color:#444;}
+    
+.hobby_area label{
+    display: inline-block;
+    background: url(../img/bg_checkbox.png) no-repeat; 
+    background-size: 15px 30px; height: 15px;
+    padding-left: 25px;    padding-right: 20px; 
+    font-size: 15px; color:#444;}
+
+.radio_area input[type='radio']:checked+label{
+    background: url(../img/bg_radio.png) no-repeat 0 -50px;}
+.hobby_area input[type='checkbox']:checked+label{
+    background-position:  0 -15px;}
+
 
 
 
