@@ -157,7 +157,7 @@ body{
     display: none;
     z-index: 9999;}
   .depth2 > li {display: inline-block; padding: 20px 0;}
-  .depth1 > li:hover .dep2box{display: block;}
+  /* .depth1 > li:hover .dep2box{display: block;} */
   .depth2 > li a{display:block; padding-left:30px ;}
   .depth1 > li:nth-child(1) .depth2{padding-left: 470px;}
   .depth1 > li:nth-child(2) .depth2{padding-left: 583px;}
