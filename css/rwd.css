@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@media screen and (max-width:1050px) {
+@media screen and (max-width:1070px) {
 
       .header_area h1{float:left; padding:45px 0 0 20px; }
 
@@ -20,7 +20,7 @@
           display: none;
           z-index: 9999;}
         .depth2 > li {display: inline-block; padding: 20px 0;}
-        .depth1 > li:hover .dep2box{display: block;}
+        /* .depth1 > li:hover .dep2box{display: block;} */
         .depth2 > li a{display:block; padding-left:30px ;}
         .depth1 > li:nth-child(1) .depth2,
         .depth1 > li:nth-child(2) .depth2,
@@ -178,7 +178,7 @@
         .depth1 > li:nth-child(3) > a{background-image: url(../img/ico_gnb03.png)}
         .depth1 > li:nth-child(4) > a{background-image: url(../img/ico_gnb04.png)}
         .depth1 > li:last-child a{padding-right: 0;}
-        .depth1 > li:hover .dep2box{display: none;}
+        /* .depth1 > li:hover .dep2box{display: none;} */
 
 
         .slide .text p:nth-child(1) {
