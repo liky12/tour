@@ -1,23 +1,51 @@
+$(window).scroll(function(){
+    var sct=$(this).scrollTop();
+    if($("html").hasClass("mobile")){
+        if(sct>50){
+            $(".to_top").fadeIn(500);
+        }else{
+            $(".to_top").fadeOut(500);
+        }
+    }else{
+        $(".to_top").show();
+    }
+})
+$(".to_top").on("click",function(){
+    $("body,html").animate({scrollTop:"0px"},600);
+})
+
 // $(".depth1 > li > a").on("mouseover focus", function(){
 //     $(this).next().stop().slideDown(400)
 //     $(this).parent().siblings().children(".dep2box").stop().slideUp(400)        
 // })
 
-var flag = true;
+
+function init(){
+            var winWidth=$(window).width()
+            // console.log(winWidth) 윈도우의 사이즈가 콘솔영역에 나타남
+            if( winWidth > 799){
+            $("#header").removeClass("on");
+            $("html").addClass("mintb").removeClass("mobile");
+            $(".to_top").show();
+            }else{
+            $("html").addClass("mobile").removeClass("mintb");
+            $(".to_top").hide();
+             }
+}
+
 $(window).resize(function(){
-    // var winWidth=$(this).innerWidth()
-    // console.log(winWidth) 윈도우의 사이즈가 콘솔영역에 나타남
-    var winWidth=$(this).width()
-    if( winWidth > 799 &&  flag){
-        $("#header").removeClass("on")
-        flag = false;
-    }
+    init()
 })
+
+$(window).load(function(){
+    init()
+})
+
 
 
 $(".depth1 > li > a").on("mouseover focus", function(){
     if($(this).parents("#header").hasClass("on")){
-        $(this).next().css({display:"none"})
+        $(this).next().fadeOut(0)
     } else{  
         $(this).next().stop().fadeIn(400)
         $(this).parent().siblings().children(".dep2box").stop().fadeOut(400)
@@ -42,3 +70,5 @@ $("#header .openMOgnb").on("click", function(){
 $("#header .closeMOgnb").on("click", function(){
     $(this).parents("#header").removeClass("on")
 })
+
+

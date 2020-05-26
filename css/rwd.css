@@ -88,7 +88,7 @@
         .to_top a:before{content: ""; display: block; width: 0; height: 0;
           border: 5px solid #fff; 
           border-top:none; border-left-color:transparent ; border-right-color: transparent;
-          position: absolute; left: 50%; margin-left: -6px; margin-top: 5px;}
+          position: absolute; left: 50%; margin-left: -6px; margin-top: 20px;}
 
 
           /* footer */
@@ -250,13 +250,13 @@
 
           
 
-
+       .to_top{  text-align: center;  font-size: 11px; position: fixed; right:2%; top:80%;}
        .quick_area{
         position: fixed; right:20px; top:85%; width: 100%; 
         margin-top: -22.5px;
         z-index: 99999;}
 
-        .to_top{  text-align: center;  font-size: 11px; display: none;}
+
 
         .quick_list {display: block; position: fixed; bottom: 0; left: 0; width: 100%;}
         .quick_list li{font-size:15px; text-align:left; float: left; width: 33.33%; } 
