@@ -1,3 +1,4 @@
+
 $(window).scroll(function(){
     var sct=$(this).scrollTop();
     if($("html").hasClass("mobile")){
@@ -38,6 +39,7 @@ $(window).resize(function(){
 })
 
 $(window).load(function(){
+    $(".loadingAni").delay(1000).fadeOut(400)
     init()
 })
 
