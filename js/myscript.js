@@ -74,3 +74,20 @@ $("#header .closeMOgnb").on("click", function(){
 })
 
 
+$(".place_list > li > a").on("click",function(e){
+    e.preventDefault();
+    var href = $(this).attr("href");
+    var src = $(this).attr("data-src");
+    var text = $(this).find("h3").text();
+    var info = $(this).find("p").text();
+    var alt = $(this).find("img").attr("alt");
+    $(".popupBox").addClass("on");
+    $(".popupBox .inner h3").text(text);
+    $(".popupBox .inner p").text(info);
+    $(".popupBox .inner div a").attr("href",href);
+    $(".popupBox .inner div img").attr("src",src).attr("alt",alt);
+    // $(".popupBox .inner").append(' <button><span class="blind">닫기</span><i class="fas fa-times-circle"></i></button>') 이렇게 js에는 버튼이 안먹힌다.
+})
+$(".popupBox  button").on("click",function(){
+    $(this).parents(".popupBox").removeClass("on")
+})
