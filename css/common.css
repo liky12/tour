@@ -200,6 +200,7 @@ body{
   letter-spacing: 3px; 
   position: relative; top:150px;}
 /* .slide2, .slide3{display: none;} */
+
 .main_rolling_pc{position: relative;}
 .marrow{
   position: absolute; top:50%;  transform: translateY(-50%);
