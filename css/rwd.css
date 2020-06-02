@@ -303,3 +303,10 @@ footer {border-top: 1px solid #ddd; padding-left: 20px; padding-right: 20px;}
 
 
 }
+
+@media screen and (max-width:500px){
+  .popupBox.on button{
+    background: none; border: none;
+    font-size: 35px; color:#fff; 
+    position: absolute; top:-30px; right: -30px; }
+}

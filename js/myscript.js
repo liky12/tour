@@ -20,10 +20,9 @@ $(".to_top").on("click",function(){
 //     $(this).parent().siblings().children(".dep2box").stop().slideUp(400)        
 // })
 
-
+var winWidth;
 function init(){
-            var winWidth=$(window).width()
-            // console.log(winWidth) 윈도우의 사이즈가 콘솔영역에 나타남
+            winWidth=$(window).width()
             if( winWidth > 799){
             $("#header").removeClass("on");
             $("html").addClass("mintb").removeClass("mobile");
@@ -75,17 +74,27 @@ $("#header .closeMOgnb").on("click", function(){
 
 
 $(".place_list > li > a").on("click",function(e){
-    e.preventDefault();
-    var href = $(this).attr("href");
-    var src = $(this).attr("data-src");
-    var text = $(this).find("h3").text();
-    var info = $(this).find("p").text();
-    var alt = $(this).find("img").attr("alt");
-    $(".popupBox").addClass("on");
-    $(".popupBox .inner h3").text(text);
-    $(".popupBox .inner p").text(info);
-    $(".popupBox .inner div a").attr("href",href);
-    $(".popupBox .inner div img").attr("src",src).attr("alt",alt);
+    e.preventDefault()
+    var href = $(this).attr("href")
+    var src = $(this).attr("data-src")
+    var text = $(this).find("h3").text()
+    var info = $(this).find("p").text()
+    var alt = $(this).find("img").attr("alt")
+    $(".popupBox").addClass("on")
+    if(winWidth<=799){
+        var litop = $(this).parent().offset().top;
+        $(".popupBox .inner").css({
+            top:litop,
+            width:"80%",
+            left:"0%",
+            transform:"translate(0%)",
+            margin:"0 10%"
+        })
+    }
+    $(".popupBox .inner h3").text(text)
+    $(".popupBox .inner p").text(info)
+    $(".popupBox .inner div a").attr("href",href)
+    $(".popupBox .inner div img").attr("src",src).attr("alt",alt).attr("width","100%")
     // $(".popupBox .inner").append(' <button><span class="blind">닫기</span><i class="fas fa-times-circle"></i></button>') 이렇게 js에는 버튼이 안먹힌다.
 })
 $(".popupBox  button").on("click",function(){
