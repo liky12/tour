@@ -118,3 +118,7 @@ $(".visualRoll").slick({
     prevArrow: '<button class="prevArrow marrow"><i class="fas fa-angle-left"></i></button>',
     nextArrow: '<button class="nextArrow marrow"><i class="fas fa-angle-right"></i></button>',
 })
+
+$(".plpa").on("click",function(){
+    
+})
