@@ -222,24 +222,32 @@ body{
 }
 
 /* multi_rolling 시작 */
-.multi_rolling img{width: 100%;padding: 0 5px; }
-.multi_rolling{padding:50px 0px ;}
+.multi_rolling img{width: 100%; }
+.multi_rolling{padding:50px 30px ;}
 .multi_rolling h2{text-align: center; font-size:40px; margin-bottom: 50px; }
 
 .multi_rolling .marrow{
   position: absolute; top:50%;  transform: translateY(-50%);
   background: none; border: none;
   font-size: 50px; color: rgb(133, 133, 133);}
-.multi_rolling .prevArrow{left:-40px; z-index: 9999;}
-.multi_rolling .nextArrow{right:-40px}
+.multi_rolling .prevArrow{left:-30px; z-index: 9999;}
+.multi_rolling .nextArrow{right:-30px}
 .multi_rolling .slick-dots{position: absolute; bottom: -30px; width: 100%; text-align: center;;}
 .multi_rolling .slick-dots li{display: inline-block;}
 .multi_rolling .slick-dots li button{width: 15px; height: 15px; background:rgb(172, 170, 170); border: none; text-indent: -999999px; overflow: hidden; border-radius: 50%; margin: 0 5px;}
 .multi_rolling .slick-dots li.slick-active button{width: 40px; border-radius: 50px;background:rgb(114, 114, 114);}
 
 
-
-
+.multi_rolling .slick-slide{
+  opacity: 0.6; transform: scale(0.85);
+  transition: all 0.5s;
+}
+.multi_rolling .slick-slide.slick-active.slick-current{
+  opacity: 1; transform: scale(1);
+}
+.multi_rolling .slick-slide.slick-active{
+  opacity: 1; transform: scale(0.85);
+}
 
 
 /* 다시찾는 인기여행지 top3 */
@@ -314,11 +322,20 @@ body{
 
 /* 상담신청 및 notice */
 .appbbs_area{padding:60px 0;}
+.appbbs_box{overflow: hidden;}
 .appbbs_box .app_line{
   float: left; width: 66%; padding: 45px 0;
   text-align: center; 
-  background: url(../img/bg_app.jpg) no-repeat;} 
-.bbs_line{float: right; width: 30%;}
+  background: url(../img/bg_app.jpg) no-repeat;
+  -webkit-transform: translate3d(-200%, 0, 0);
+  transform: translate3d(-200%, 0, 0);} 
+.bbs_line{float: right; width: 30%;
+  -webkit-transform: translate3d(300%, 0, 0);
+  transform: translate3d(300%, 0, 0);}
+.appbbs_box.on .app_line{
+    animation: fadeInLeft 1s both 0.5s;     } 
+.appbbs_box.on .bbs_line{
+  animation: fadeInRight 1s both 0.5s;}
 
 .app_line a{
   display:inline-block; 

@@ -10,6 +10,12 @@ $(window).scroll(function(){
     }else{
         $(".to_top").show();
     }
+
+    if(sct>1000){
+        $(".appbbs_box").addClass("on")
+    }else{
+        $(".appbbs_box").removeClass("on")
+    }
 })
 $(".to_top").on("click",function(){
     $("body,html").animate({scrollTop:"0px"},600);
@@ -145,7 +151,9 @@ $(".multi_visual").slick({
     autoplaySpeed:2000,//기본값3000 슬라이드 시간
     dots:true,//기본값 false 슬라이드 번호 버튼
     speed:400, //슬라이드 이동 시간
-    slidesToShow: 4,//첫화면에 보여지는 슬라이드 수
+    centerMode:true,
+    centerPadding:"50px",
+    slidesToShow: 3,//첫화면에 보여지는 슬라이드 수
     slidesToScroll: 1,//넘어가는 슬라이드 수
     pauseOnHover:false,//  슬라이드 멈춤 여부
     pauseOnDotsHover:true,//슬라이드 버튼 위에 마우스오버시 멈춤
@@ -156,4 +164,13 @@ $(".multi_visual").slick({
     arrows:true,//기본값true,슬라이드 방향 버튼
     prevArrow: '<button class="prevArrow marrow"><i class="fas fa-angle-left"></i></button>',
     nextArrow: '<button class="nextArrow marrow"><i class="fas fa-angle-right"></i></button>',
+    responsive:[{
+        breakpoint:800,
+        settings:{
+            centerMode:true,
+            centerPadding:"100px",
+            slidesToShow: 1,//첫화면에 보여지는 슬라이드 수
+        }
+    }]
 })
+
