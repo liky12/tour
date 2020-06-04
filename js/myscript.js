@@ -103,7 +103,7 @@ $(".popupBox  button").on("click",function(){
 
 $(".visualRoll").slick({
     autoplay:true,//기본값 false
-    autoplaySpeed:2000,//기본값3000 슬라이드 시간
+    autoplaySpeed:4000,//기본값3000 슬라이드 시간
     dots:true,//기본값 false 슬라이드 번호 버튼
     speed:400, //슬라이드 이동 시간
     slideToShow:1,//첫화면에 보여지는 슬라이드 수
@@ -119,6 +119,41 @@ $(".visualRoll").slick({
     nextArrow: '<button class="nextArrow marrow"><i class="fas fa-angle-right"></i></button>',
 })
 
+// $(".plpa").toggle(
+//     function(){
+//         $(".visualRoll").slick("slickPause")
+//         $(this).find("i").removeClass("fa-pause").addClass("fa-play")
+//     },
+//     function(){
+//         $(".visualRoll").slick("slickPlay")
+//         $(this).find("i").removeClass("fa-play").addClass("fa-pause")
+//     }
+// )  
+
 $(".plpa").on("click",function(){
-    
+    if($(this).find("i").hasClass("fa-pause")){
+        $(".visualRoll").slick("slickPause")
+        $(this).find("i").removeClass("fa-pause").addClass("fa-play")
+    }else{ 
+        $(".visualRoll").slick("slickPlay")
+        $(this).find("i").removeClass("fa-play").addClass("fa-pause")
+    }
+})
+
+$(".multi_visual").slick({
+    autoplay:true,//기본값 false
+    autoplaySpeed:2000,//기본값3000 슬라이드 시간
+    dots:true,//기본값 false 슬라이드 번호 버튼
+    speed:400, //슬라이드 이동 시간
+    slidesToShow: 4,//첫화면에 보여지는 슬라이드 수
+    slidesToScroll: 1,//넘어가는 슬라이드 수
+    pauseOnHover:false,//  슬라이드 멈춤 여부
+    pauseOnDotsHover:true,//슬라이드 버튼 위에 마우스오버시 멈춤
+    pauseOnFocus:false,//동그라미 버븐클릭시 자동실행 멈춤여부
+    cssEase:"linear",//슬라이드 가속도
+    draggable:true,//마우스 드래그시 움직임 여부
+    fade:false,//넘어가는 방향(오->왼), true:제자리아웃온 효과
+    arrows:true,//기본값true,슬라이드 방향 버튼
+    prevArrow: '<button class="prevArrow marrow"><i class="fas fa-angle-left"></i></button>',
+    nextArrow: '<button class="nextArrow marrow"><i class="fas fa-angle-right"></i></button>',
 })

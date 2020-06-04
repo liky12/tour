@@ -2,7 +2,7 @@
 
 /* reset element */
 *{ margin: 0;  padding: 0; box-sizing: border-box;}
-
+*:focus {  outline:none }
 h1,
 h2,
 h3,
@@ -200,22 +200,46 @@ body{
   letter-spacing: 3px; 
   position: relative; top:150px;}
 /* .slide2, .slide3{display: none;} */
+.main_rolling_pc .slide.slick-active .text p:nth-child(1){ animation: bounceInDown 1s both 0.5s}
+.main_rolling_pc .slide.slick-active .text p:nth-child(2){animation: bounceInUp 1s both 1s}
+.main_rolling_pc .slide.slick-active .text p:nth-child(3){animation: fadeInRight 1s both 1.5s}
+
 
 .main_rolling_pc{position: relative;}
-.marrow{
+.main_rolling_pc .marrow{
   position: absolute; top:50%;  transform: translateY(-50%);
   background: none; border: none;
   font-size: 50px; color: #fff;}
-.prevArrow{left:15px; z-index: 9999;}
-.nextArrow{right:20px}
-.slick-dots{position: absolute; bottom: 20px; width: 100%; text-align: center;}
-.slick-dots li{display: inline-block;}
-.slick-dots li button{width: 15px; height: 15px; background:#fff; border: none; text-indent: -999999px; overflow: hidden; border-radius: 50%; margin: 0 5px;}
-.slick-dots li.slick-active button{width: 40px; border-radius: 50px;}
-.plpa{position: absolute; bottom: 18px; background: none; border: none; 
-  font-size: 15px; color: #fff; right: 0%; width: 50%;
-  text-align: left; padding-left: 60px;
+.main_rolling_pc .prevArrow{left:15px; z-index: 9999;}
+.main_rolling_pc .nextArrow{right:20px}
+.main_rolling_pc .slick-dots{position: absolute; bottom: 20px; width: calc(50% + 30px); text-align: right;}
+.main_rolling_pc .slick-dots li{display: inline-block;}
+.main_rolling_pc .slick-dots li button{width: 15px; height: 15px; background:#fff; border: none; text-indent: -999999px; overflow: hidden; border-radius: 50%; margin: 0 5px;}
+.main_rolling_pc .slick-dots li.slick-active button{width: 40px; border-radius: 50px;}
+.main_rolling_pc .plpa{position: absolute; bottom: 18px; background: none; border: none; 
+  font-size: 15px; color: #fff; right: 0%; width: calc(50% - 30px);
+  text-align: left; padding-left: 10px;
 }
+
+/* multi_rolling 시작 */
+.multi_rolling img{width: 100%;padding: 0 5px; }
+.multi_rolling{padding:50px 0px ;}
+.multi_rolling h2{text-align: center; font-size:40px; margin-bottom: 50px; }
+
+.multi_rolling .marrow{
+  position: absolute; top:50%;  transform: translateY(-50%);
+  background: none; border: none;
+  font-size: 50px; color: rgb(133, 133, 133);}
+.multi_rolling .prevArrow{left:-40px; z-index: 9999;}
+.multi_rolling .nextArrow{right:-40px}
+.multi_rolling .slick-dots{position: absolute; bottom: -30px; width: 100%; text-align: center;;}
+.multi_rolling .slick-dots li{display: inline-block;}
+.multi_rolling .slick-dots li button{width: 15px; height: 15px; background:rgb(172, 170, 170); border: none; text-indent: -999999px; overflow: hidden; border-radius: 50%; margin: 0 5px;}
+.multi_rolling .slick-dots li.slick-active button{width: 40px; border-radius: 50px;background:rgb(114, 114, 114);}
+
+
+
+
 
 
 /* 다시찾는 인기여행지 top3 */
