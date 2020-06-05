@@ -78,9 +78,10 @@ $("#header .closeMOgnb").on("click", function(){
     $(this).parents("#header").removeClass("on")
 })
 
-
+var lieq;//전역변수
 $(".place_list > li > a").on("click",function(e){
     e.preventDefault()
+    lieq = $(this).parent().index()
     var href = $(this).attr("href")
     var src = $(this).attr("data-src")
     var text = $(this).find("h3").text()
@@ -103,8 +104,40 @@ $(".place_list > li > a").on("click",function(e){
     $(".popupBox .inner div img").attr("src",src).attr("alt",alt).attr("width","100%")
     // $(".popupBox .inner").append(' <button><span class="blind">닫기</span><i class="fas fa-times-circle"></i></button>') 이렇게 js에는 버튼이 안먹힌다.
 })
-$(".popupBox  button").on("click",function(){
+$(".popupBox  button.close").on("click",function(){
     $(this).parents(".popupBox").removeClass("on")
+})
+
+$(".popupBox button.prev").on("click",function(){
+    --lieq;
+    if(lieq<0){
+        lieq=2;
+    }
+    var href = $(".place_list > li").eq(lieq).find("a").attr("href")
+    var src = $(".place_list > li ").eq(lieq).find("a").attr("data-src")
+    var text = $(".place_list > li").eq(lieq).find("a").find("h3").text()
+    var info = $(".place_list > li").eq(lieq).find("a").find("p").text()
+    var alt = $(".place_list > li").eq(lieq).find("a").find("img").attr("alt")
+    $(".popupBox .inner h3").text(text)
+    $(".popupBox .inner p").text(info)
+    $(".popupBox .inner div a").attr("href",href)
+    $(".popupBox .inner div img").attr("src",src).attr("alt",alt).attr("width","100%")
+})
+
+$(".popupBox button.next").on("click",function(){
+    ++lieq;
+    if(lieq == $(".place_list > li").length){
+        lieq=0;
+    }
+    var href = $(".place_list > li").eq(lieq).find("a").attr("href")
+    var src = $(".place_list > li ").eq(lieq).find("a").attr("data-src")
+    var text = $(".place_list > li").eq(lieq).find("a").find("h3").text()
+    var info = $(".place_list > li").eq(lieq).find("a").find("p").text()
+    var alt = $(".place_list > li").eq(lieq).find("a").find("img").attr("alt")
+    $(".popupBox .inner h3").text(text)
+    $(".popupBox .inner p").text(info)
+    $(".popupBox .inner div a").attr("href",href)
+    $(".popupBox .inner div img").attr("src",src).attr("alt",alt).attr("width","100%")
 })
 
 $(".visualRoll").slick({
