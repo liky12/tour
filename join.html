@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-	<title> 회원가입 | 투어리스트인투어 </title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-	<meta charset="utf-8">
+	<title> 회원가입 - 투어리스트인투어 </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2">
+	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
 	<link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/rwd.css">
+	<link rel="stylesheet" href="css/rwd.css">
 	<link rel="stylesheet" href="css/join.css">
 	<script src="js/jquery-1.12.4.min.js"></script>
-	<script src="js/jquery-migrate-1.4.1.min.js"></script>
-<!--[if lte IE 9]>
-	<script src="js/html5shiv.js"></script>
-	<script src="js/prefixfree.min.js"></script>
-<![endif]-->
+	<script src="js/jquery-migrate-1.4.0.min.js"></script>
+	<!--[if lte IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/prefixfree.min.js"></script>
+	<![endif]-->
 </head>
 
 <body>
@@ -22,168 +23,159 @@
 
 		<div class="skipnav"><a href="#container">본문 바로가기</a></div>
 
-		<header id="header" class=""><!-- class="on" -->
-			<div class="header_area row cf ">
+		<header id="header" class="">
+			<div class="header_area  row  cf">
 				<h1><a href="index.html">Tourist in tour</a></h1>
-
-			
-			   <!-- 800px 이상 사이즈에서는 안보이는 컨텐츠-->
 				<p class="openMOgnb">
-					<a href="javascript:;"><strong class="blind">메뉴열기</strong>
+					<a href="#none">
+						<strong class="blind">메뉴열기</strong>
 						<span></span>
 						<span></span>
 						<span></span>
 					</a>
 				</p>
-			   <!-- ***************************************-->
-
 				<div class="header_cont">
-
 					<ul class="util">
 						<li><a href="#">로그인</a></li>
 						<li><a href="join.html">회원가입</a></li>
 					</ul>
-
 					<nav>
 						<ul class="depth1">
 							<li><a href="#" class="openAll1">여행정보</a>
 								<div class="dep2box">
-								<ul class="depth2 row">
-									<li><a href="#">국내</a></li>
-									<li><a href="#">해외</a></li>
-								</ul></div>
-							
+									<ul class="depth2 row">
+										<li><a href="#">국내</a></li>
+										<li><a href="#">해외</a></li>
+									</ul>
+							   </div>
 							</li>
 							<li><a href="#" class="openAll2">고객센터</a>
 								<div class="dep2box">
-								<ul class="depth2 row">
-									<li><a href="#">공지사항</a></li>
-									<li><a href="#">문의하기</a></li>
-								</ul></div>
+									<ul class="depth2 row">
+										<li><a href="#">공지사항</a></li>
+										<li><a href="#">문의하기</a></li>
+									</ul>
+							   </div>
 							</li>
 							<li><a href="#" class="openAll3">상품투어</a>
 								<div class="dep2box">
-								<ul class="depth2 row">
-									<li><a href="#">프로그램 소개</a></li>
-									<li><a href="#">여행자료</a></li>
-								</ul></div>
+									<ul class="depth2 row">
+										<li><a href="#">프로그램 소개</a></li>
+										<li><a href="#">여행자료</a></li>
+									</ul>
+							   </div>
 							</li>
 							<li><a href="#" class="openAll4">티켓/가이드</a>
 								<div class="dep2box">
-								<ul class="depth2 row">
-									<li><a href="#">항공</a></li>
-									<li><a href="#">호텔</a></li>
-								</ul></div>
+									<ul class="depth2 row">
+										<li><a href="#">항공</a></li>
+										<li><a href="#">호텔</a></li>
+									</ul>
+								</div>
 							</li>
 						</ul>
 					</nav>
-
-			   <!-- 800px 이상 사이즈에서는 안보이는 컨텐츠-->
 					<p class="closeMOgnb">
-						<a href="javascript:;">
-							<storng class="blind">메뉴닫기</storng>
+						<a href="#none">
+							<strong class="blind">메뉴닫기</strong>
 							<span></span>
 							<span></span>
 						</a>
 					</p>
-			   <!-- ***************************************-->
-
 				</div>
 			</div>
 		</header>
 
 		<div id="container">
-			<!-- *********************여기부터 회원가입 페이지*********************  -->
-            <div class="join_tit">
-                <div class="row">
-                    <h2>TOURIST <span class="in"> in</span> TOUR</h2>
-                    <p>MEMBER<span class="path">/</span>회원가입</p>
-                </div>
-            </div>
-            <div class="join_form row">
-                <form action="#" method="post">
-                    <fieldset>
-                        <legend>회원가입 양식</legend>
-                        <p class="info_pilsoo pilsoo_item">필수 입력</p>
-                        <ul class="app_list">
+			<div class="join_tit">
+				<div class="row">
+					<h2>TOURIST <span class="in">in</span> TOUR</h2>
+					<p>MEMBER <span class="path">/</span> 회원가입</p>
+				</div>
+			</div>
+
+			<div class="join_form  row">
+				<form action="#"  method="post">
+					<fieldset>
+						<legend>회원가입양식</legend>
+						<p class="info_pilsoo  pilsoo_item">필수입력</p>
+						<ul class="app_list">
 							<li class="cf">
-								<label for="email_lbl" class="tit_lbl pilsoo_item">이메일</label>
+								<label  for="email_lbl" class="tit_lbl  pilsoo_item">이메일</label>
 								<div class="app_content">
-									<input type="text" id="email_lbl" placeholder='' name="email_lbl" required>
-									<span class="icon_space">@</span>
-									<input type="text" id="edomain_lbl" placeholder='' name="edomain_lbl"  required disabled>
+									<input  type="text"  id="email_lbl"  name="email_lbl"  required>
+									<span class="ico_space"> @ </span>
+									<input  type="text"  id="edomain"  name="edomain"  required  disabled>
 									<select name="edomain_opt" id="edomain_opt">
-										<option>이메일선택</option>
-										<option value="naver.com">naver.com</option>
-										<option value="daum.net">daum.net</option>
-										<option value="" >직접입력</option>
+										<option value="noselect">-이메일선택-</option>
+										<option value="naver.com">네이버</option>
+										<option value="daum.net">다음</option>
+										<option value="self">직접입력</option>
 									</select>
 								</div>
-							</li>    
-                            <li class="cf">
-                                <label for="name_lbl" class="tit_lbl pilsoo_item">작성자명</label>
-                                <div class="app_content">
-                                    <input type="text" id="name_lbl" placeholder="이름을 입력해 주세요" required>
-                                </div>
-                            </li>
-                            <li class="cf">
-                                <label for="pw_lbl" class="tit_lbl pilsoo_item">비밀번호</label>
-                                <div class="app_content">
-                                    <input type="password" id="pw_lbl" placeholder="비밀번호를 입력해 주세요"  required>
-                                </div>
-                            </li>
-                            <li class="cf">
-                                <label for="pwok_lbl" class="tit_lbl pilsoo_item">비밀번호 확인</label>
-                                <div class="app_content">
-                                    <input type="password" id="pwok_lbl" placeholder="비밀번호를 다시한번 입력해 주세요"  required>
-                                </div>
-                            </li>
-                        </li>
-                        <li class="cf">
-                            <label for="hp_lbl" class="tit_lbl pilsoo_item">연락처</label>
-                            <div class="app_content">
-                                <input type="tel" id="hp_lbl" placeholder='"-"없이 숫자만 입력하세요'  required>
-                            </div>
-						</li>
-						<li class="cf">
-							<label  class="tit_lbl">성별</label>
-							<div class="app_content ti radio_area">
-								<input type="radio" id="male" name="gender">
-								<label for="male" class="gender">남</label>
-								<input type="radio" id="female" name="gender">
-								<label for="female" class="gender">여</label>
-							</div>
-						</li>
-						<li class="cf">
-							<label class="tit_lbl">취미</label>
-							<div class="app_content ti hobby_area">
-								<input type="checkbox" id="hobby1" name="hobby1">
-								<label for="hobby1">등산</label>
-								<input type="checkbox" id="hobby2" name="hobby2">
-								<label for="hobby2">독서</label>
-								<input type="checkbox" id="hobby3" name="hobby3">
-								<label for="hobby3">영화감상</label>
-							</div>
-						</li>
-						<li class>
-							<label for="query" class="tit_lbl">문의내용</label>
-							<div class="app_content">
-								<textarea name="query" id="query" 
-								placeholder=
-"간단한 상담 요청 사항을 남겨주시면 보다 상세한 상담이 가능합니다.
-전화상담 희망시 기재 부탁드립니다."></textarea>
-							</div>
-						</li>
-                        </ul>
+							</li>
+							<li class="cf">
+								<label  for="name_lbl" class="tit_lbl  pilsoo_item">작성자명</label>
+								<div class="app_content">
+									<input  type="text"  id="name_lbl"  placeholder="이름을 입력해주세요"  required>
+								</div>
+							</li>
+							<li class="cf">
+								<label  for="pw_lbl" class="tit_lbl  pilsoo_item">비밀번호</label>
+								<div class="app_content">
+									<input  type="password"  id="pw_lbl"  placeholder="비밀번호를 입력해주세요"  required>
+								</div>
+							</li>
+							<li class="cf">
+								<label  for="pwok_lbl" class="tit_lbl  pilsoo_item">비밀번호 확인</label>
+								<div class="app_content">
+									<input  type="password"  id="pwok_lbl"  placeholder="비밀번호를 다시 한번 입력해주세요" required>
+								</div>
+							</li>
+							<li class="cf">
+								<label  for="hp_lbl" class="tit_lbl  pilsoo_item">연락처</label>
+								<div class="app_content">
+									<input  type="text"  id="hp_lbl"  placeholder='휴대폰번호 "-"없이 숫자만 입력해주세요'  required>
+								</div>
+							</li>
+							<li class="cf">
+								<label  class="tit_lbl  nopilsoo">성별</label>
+								<div class="app_content  radio_area">
+									<input type="radio" id="male" name="gender"> 
+									<label for="male" class="gender">남</label>
+									<input type="radio" id="female" name="gender">
+									<label for="female" class="gender">여</label>
+								</div>
+							</li>
+							<li class="cf">
+								<label  class="tit_lbl  nopilsoo">취미</label>
+								<div class="app_content  hobby_area">
+									<input type="checkbox" id="hobby1" name="hobby1">
+									<label for="hobby1">등산</label>
+									<input type="checkbox" id="hobby2" name="hobby2">
+									<label for="hobby2">독서</label>
+									<input type="checkbox" id="hobby3" name="hobby3">
+									<label for="hobby3">영화감상</label>
+								</div>
+							</li>
+							<li class="cf">
+								<label for="query" class="tit_lbl  nopilsoo">문의내용</label>
+								<div class="app_content">
+									<textarea name="query" id="query" placeholder="간단한 상담요청 사항을 남겨주시면 보다 상세한 상담이 가능합니다. 
+전화상담 희망시 기재부탁드립니다. (30글자 이내)" maxlength="30"></textarea>
+									<p>남은글자 : <span>30</span> 글자</p>
+								</div>
+							</li>
+						</ul>	
 					</fieldset>
 					<p class="btn">
-						<input type="submit" value="확인">
+						<input type="submit" value="전송">
 						<input type="reset" value="취소">
 					</p>
 				</form>
-			</div>
-			<!-- ********************* 여기까지 회원가입 페이지*********************  -->
-        </div>    
+			</div>	
+		</div>
+
 
 		<footer>
 			<div class="foot_area row">
@@ -199,9 +191,9 @@
 				</p>
 				<p class="copy">Copyright(c) TouristInTour all right reserved</p>
 				<ul class="snslink">
-					<li><a href="http://naver.com" target="_blank" alt="네이버새창">blog</a></li>
-					<li><a href="http://facebook.com" target="_blank" alt="페이스북새창">facebook</a></li>
-					<li><a href="http://instargram.com" target="_blank" alt="인스타그램새창">instargram</a></li>
+					<li><a href="javascript:;">blog</a></li>
+					<li><a href="javascript:;">facebook</a></li>
+					<li><a href="javascript:;">instargram</a></li>
 				</ul>
 			</div>
 		</footer>
@@ -210,13 +202,13 @@
 
 	<h2 class="blind">빠른 링크 : 전화 문의,카카오톡,오시는 길,꼭대기로</h2>
 	<div class="quick_area">
-		<ul class="quick_list cf">
+		<ul class="quick_list  cf">
 			<li><a href="tel:010-7184-4403">
 					<h3>전화 문의</h3>
 					<p>010-1234-5678</p>
 				</a></li>
 			<li><a href="javascript:;">
-					<h3>카카오톡 </h3>
+					<h3>카카오톡 <em>상담</em></h3>
 					<p>1:1상담</p>
 				</a></li>
 			<li><a href="javascript:;">
@@ -228,7 +220,28 @@
 
 
 	<script src="js/myscript.js"></script>
+	<script>
+		$("#edomain_opt").change(function(){
+			$("#edomain_opt option:selected").each(function(){ //순차적으로 읽음 : each() , 반복문
+				if(  ($(this).val() != "noselect")  &&   ($(this).val() != "self")     ){ //value 값을 추출 : val()
+					var kim = $(this).val() 
+					$("#edomain").val(kim).attr({disabled:true})
+				}else if(    $(this).val() =="noselect"  ){
+					$("#edomain").val("이메일을 선택하세요").attr({disabled:true})//disabled = "disabled" (비활성)
+				}else{
+					$("#edomain").val("").attr({disabled:false}) //disabled 속성이 제거됨 (활성)
+				}
+			})
+		})
 
+		var maxlen = $("#query").attr("maxlength")
+		$("#query").keydown(function(){
+			var current =	$(this).val().length
+			var remain = maxlen - current
+			$(".app_content p span").text(remain)
+		})
+
+	</script>
 </body>
 
 </html>
