@@ -51,13 +51,18 @@
     font-size: 15px;     width:100%;   }
 .join_form     #email_lbl,
 .join_form     #edomain,
-.join_form     #edomain_opt  { width:160px }
+.join_form     #edomain_opt,
+.join_form     #birthday { width:160px }
+.join_form     #sample4_postcode,
+.join_form     #sample4_roadAddress,
+.join_form     #sample4_jibunAddress {width: 300px;}
 .join_form     #query { height: 245px;
     /* textarea는 글꼴 관련 스타일을 상위태그에서 상속받지 못함 */
     font-size:15px; 
     font-family:'Malgun Gothic','맑은 고딕',sans-serif; 
     letter-spacing:-1px;      color:#444;       padding:10px; 
     line-height:1.5;   }
+
 .join_form  .btn  {  text-align:center; margin-top:20px  }    
 .join_form  .btn   input  { width:80px; height:50px; 
     background:#000; color:#fff;
@@ -88,5 +93,9 @@
         height:15px; 
 }
 .join_form   .hobby_area   input[type='checkbox']:checked+label {
-        background-position:0 -15px
-} 
+        background-position:0 -15px} 
+
+#zipbtn{height: 45px; width: 80px; position: relative; top:-6px; border: none; color:gray}
+#zipbtn:hover{background: rgba(92, 90, 90, 0.383); }
+.ui-datepicker-title select{height: 20px;}
+.join_form     #sample4_postcode{margin-bottom: 15px;}
